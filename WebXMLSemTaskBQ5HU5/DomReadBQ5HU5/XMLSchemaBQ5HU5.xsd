@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="allatmenhely">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="gondozok" type="GondozokTipus"/>
+                <xs:element name="allatok" type="AllatokTipus"/>
+                <xs:element name="orokbefogadok" type="OrokbefogadokTipus"/>
+                <xs:element name="orvosiVizsgalatok" type="VizsgalatokTipus"/>
+                <xs:element name="jelentkezesek" type="JelentkezesekTipus"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="gondozoKulcs">
+            <xs:selector xpath="gondozok/gondozo"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:key name="allatKulcs">
+            <xs:selector xpath="allatok/allat"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:key name="orokbefogadoKulcs">
+            <xs:selector xpath="orokbefogadok/orokbefogado"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:key name="vizsgalatKulcs">
+            <xs:selector xpath="orvosiVizsgalatok/vizsgalat"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:key name="jelentkezesKulcs">
+            <xs:selector xpath="jelentkezesek/jelentkezes"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+
+        <xs:keyref name="allatGondozoRef" refer="gondozoKulcs">
+            <xs:selector xpath="allatok/allat"/>
+            <xs:field xpath="@gondozoRef"/>
+        </xs:keyref>
+
+        <xs:keyref name="vizsgalatAllatRef" refer="allatKulcs">
+            <xs:selector xpath="orvosiVizsgalatok/vizsgalat"/>
+            <xs:field xpath="@allatRef"/>
+        </xs:keyref>
+
+        <xs:keyref name="jelentkezesAllatRef" refer="allatKulcs">
+            <xs:selector xpath="jelentkezesek/jelentkezes"/>
+            <xs:field xpath="@allatRef"/>
+        </xs:keyref>
+
+        <xs:keyref name="jelentkezesOrokbefogadoRef" refer="orokbefogadoKulcs">
+            <xs:selector xpath="jelentkezesek/jelentkezes"/>
+            <xs:field xpath="@orokbefogadoRef"/>
+        </xs:keyref>
+
+    </xs:element>
+
+    <xs:complexType name="NevTipus">
+        <xs:sequence>
+            <xs:element name="vezeteknev" type="xs:string"/>
+            <xs:element name="keresztnev" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="LakcimTipus">
+        <xs:sequence>
+            <xs:element name="iranyitoszam" type="xs:string"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="LeirasTipus">
+        <xs:sequence>
+            <xs:element name="szin" type="xs:string"/>
+            <xs:element name="meret" type="xs:string"/>
+            <xs:element name="ismertetoJegy" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="KezelesTipus">
+        <xs:sequence>
+            <xs:element name="gyogyszer" type="xs:string"/>
+            <xs:element name="adagolas" type="xs:string"/>
+            <xs:element name="idotartam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GondozokTipus">
+        <xs:sequence>
+            <xs:element name="gondozo" type="GondozoTipus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GondozoTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="NevTipus"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="telefonszamok">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="telefonszam" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="munkakor" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="AllatokTipus">
+        <xs:sequence>
+            <xs:element name="allat" type="AllatTipus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AllatTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="faj" type="xs:string"/>
+            <xs:element name="fajta" type="xs:string"/>
+            <xs:element name="kor" type="xs:integer"/>
+            <xs:element name="leiras" type="LeirasTipus"/>
+            <xs:element name="oltasok">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="oltas" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="gondozoRef" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="OrokbefogadokTipus">
+        <xs:sequence>
+            <xs:element name="orokbefogado" type="OrokbefogadoTipus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="OrokbefogadoTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="NevTipus"/>
+            <xs:element name="lakcim" type="LakcimTipus"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="korabbiAllatok">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="allatfaj" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="VizsgalatokTipus">
+        <xs:sequence>
+            <xs:element name="vizsgalat" type="VizsgalatTipus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="VizsgalatTipus">
+        <xs:sequence>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="tipus" type="xs:string"/>
+            <xs:element name="diagnozis" type="xs:string"/>
+            <xs:element name="kezeles" type="KezelesTipus"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="allatRef" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="JelentkezesekTipus">
+        <xs:sequence>
+            <xs:element name="jelentkezes" type="JelentkezesTipus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="JelentkezesTipus">
+        <xs:sequence>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="motivacio" type="xs:string"/>
+            <xs:element name="statusz" type="xs:string"/>
+            <xs:element name="megjegyzes" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="allatRef" type="xs:IDREF" use="required"/>
+        <xs:attribute name="orokbefogadoRef" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<allatmenhely xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaBQ5HU5.xsd">
+        
+    <gondozok>
+                
+        <gondozo id="G1">
+                        
+            <nev>
+                                
+                <vezeteknev>Kovács</vezeteknev>
+                                
+                <keresztnev>Anna</keresztnev>
+                            
+            </nev>
+                        
+            <email>kovacs.anna@menhely.hu</email>
+                        
+            <telefonszamok>
+                                
+                <telefonszam>+36201234567</telefonszam>
+                                
+                <telefonszam>+36301234567</telefonszam>
+                            
+            </telefonszamok>
+                        
+            <munkakor>állatgondozó</munkakor>
+                    
+        </gondozo>
+                
+        <gondozo id="G2">
+                        
+            <nev>
+                                
+                <vezeteknev>Nagy</vezeteknev>
+                                
+                <keresztnev>Béla</keresztnev>
+                            
+            </nev>
+                        
+            <email>nagy.bela@menhely.hu</email>
+                        
+            <telefonszamok>
+                                
+                <telefonszam>+36207654321</telefonszam>
+                            
+            </telefonszamok>
+                        
+            <munkakor>telephelyvezető</munkakor>
+                    
+        </gondozo>
+                
+        <gondozo id="G3">
+                        
+            <nev>
+                                
+                <vezeteknev>Szabó</vezeteknev>
+                                
+                <keresztnev>Eszter</keresztnev>
+                            
+            </nev>
+                        
+            <email>szabo.eszter@menhely.hu</email>
+                        
+            <telefonszamok>
+                                
+                <telefonszam>+36305556666</telefonszam>
+                            
+            </telefonszamok>
+                        
+            <munkakor>önkéntes koordinátor</munkakor>
+                    
+        </gondozo>
+            
+    </gondozok>
+        
+    <allatok>
+                
+        <allat gondozoRef="G1" id="A1">
+                        
+            <nev>Buksi</nev>
+                        
+            <faj>kutya</faj>
+                        
+            <fajta>keverék</fajta>
+                        
+            <kor>4</kor>
+                        
+            <leiras>
+                                
+                <szin>barna</szin>
+                                
+                <meret>közepes</meret>
+                                
+                <ismertetoJegy>fehér folt a mellkason</ismertetoJegy>
+                            
+            </leiras>
+                        
+            <oltasok>
+                                
+                <oltas>veszettség elleni oltás</oltas>
+                                
+                <oltas>kombinált oltás</oltas>
+                            
+            </oltasok>
+                    
+        </allat>
+                
+        <allat gondozoRef="G1" id="A2">
+                        
+            <nev>Mici</nev>
+                        
+            <faj>macska</faj>
+                        
+            <fajta>európai rövidszőrű</fajta>
+                        
+            <kor>2</kor>
+                        
+            <leiras>
+                                
+                <szin>szürke</szin>
+                                
+                <meret>kicsi</meret>
+                                
+                <ismertetoJegy>zöld szem</ismertetoJegy>
+                            
+            </leiras>
+                        
+            <oltasok>
+                                
+                <oltas>kombinált macskaoltás</oltas>
+                            
+            </oltasok>
+                    
+        </allat>
+                
+        <allat gondozoRef="G2" id="A3">
+                        
+            <nev>Morci</nev>
+                        
+            <faj>kutya</faj>
+                        
+            <fajta>németjuhász keverék</fajta>
+                        
+            <kor>6</kor>
+                        
+            <leiras>
+                                
+                <szin>fekete-barna</szin>
+                                
+                <meret>nagy</meret>
+                                
+                <ismertetoJegy>féloldalt lógó fül</ismertetoJegy>
+                            
+            </leiras>
+                        
+            <oltasok>
+                                
+                <oltas>veszettség elleni oltás</oltas>
+                                
+                <oltas>chip regisztráció</oltas>
+                            
+            </oltasok>
+                    
+        </allat>
+            
+    </allatok>
+        
+    <orokbefogadok>
+                
+        <orokbefogado id="O1">
+                        
+            <nev>
+                                
+                <vezeteknev>Tóth</vezeteknev>
+                                
+                <keresztnev>Péter</keresztnev>
+                            
+            </nev>
+                        
+            <lakcim>
+                                
+                <iranyitoszam>3950</iranyitoszam>
+                                
+                <varos>Sárospatak</varos>
+                                
+                <utca>Rákóczi utca</utca>
+                                
+                <hazszam>12</hazszam>
+                            
+            </lakcim>
+                        
+            <email>toth.peter@email.hu</email>
+                        
+            <korabbiAllatok>
+                                
+                <allatfaj>kutya</allatfaj>
+                                
+                <allatfaj>macska</allatfaj>
+                            
+            </korabbiAllatok>
+                    
+        </orokbefogado>
+                
+        <orokbefogado id="O2">
+                        
+            <nev>
+                                
+                <vezeteknev>Kiss</vezeteknev>
+                                
+                <keresztnev>Réka</keresztnev>
+                            
+            </nev>
+                        
+            <lakcim>
+                                
+                <iranyitoszam>3980</iranyitoszam>
+                                
+                <varos>Sátoraljaújhely</varos>
+                                
+                <utca>Kossuth utca</utca>
+                                
+                <hazszam>8</hazszam>
+                            
+            </lakcim>
+                        
+            <email>kiss.reka@email.hu</email>
+                        
+            <korabbiAllatok>
+                                
+                <allatfaj>macska</allatfaj>
+                            
+            </korabbiAllatok>
+                    
+        </orokbefogado>
+                
+        <orokbefogado id="O3">
+                        
+            <nev>
+                                
+                <vezeteknev>Varga</vezeteknev>
+                                
+                <keresztnev>Dániel</keresztnev>
+                            
+            </nev>
+                        
+            <lakcim>
+                                
+                <iranyitoszam>3525</iranyitoszam>
+                                
+                <varos>Miskolc</varos>
+                                
+                <utca>Petőfi utca</utca>
+                                
+                <hazszam>3</hazszam>
+                            
+            </lakcim>
+                        
+            <email>varga.daniel@email.hu</email>
+                        
+            <korabbiAllatok>
+                                
+                <allatfaj>kutya</allatfaj>
+                            
+            </korabbiAllatok>
+                    
+        </orokbefogado>
+            
+    </orokbefogadok>
+        
+    <orvosiVizsgalatok>
+                
+        <vizsgalat allatRef="A1" id="V1">
+                        
+            <datum>2026-02-10</datum>
+                        
+            <tipus>általános vizsgálat</tipus>
+                        
+            <diagnozis>egészséges</diagnozis>
+                        
+            <kezeles>
+                                
+                <gyogyszer>nincs</gyogyszer>
+                                
+                <adagolas>nincs</adagolas>
+                                
+                <idotartam>0 nap</idotartam>
+                            
+            </kezeles>
+                    
+        </vizsgalat>
+                
+        <vizsgalat allatRef="A2" id="V2">
+                        
+            <datum>2026-03-01</datum>
+                        
+            <tipus>oltás</tipus>
+                        
+            <diagnozis>oltás beadva</diagnozis>
+                        
+            <kezeles>
+                                
+                <gyogyszer>kombinált oltóanyag</gyogyszer>
+                                
+                <adagolas>1 adag</adagolas>
+                                
+                <idotartam>1 nap</idotartam>
+                            
+            </kezeles>
+                    
+        </vizsgalat>
+                
+        <vizsgalat allatRef="A3" id="V3">
+                        
+            <datum>2026-03-15</datum>
+                        
+            <tipus>sérülés ellenőrzés</tipus>
+                        
+            <diagnozis>enyhe lábsérülés</diagnozis>
+                        
+            <kezeles>
+                                
+                <gyogyszer>gyulladáscsökkentő</gyogyszer>
+                                
+                <adagolas>napi 1 tabletta</adagolas>
+                                
+                <idotartam>5 nap</idotartam>
+                            
+            </kezeles>
+                    
+        </vizsgalat>
+            
+    </orvosiVizsgalatok>
+        
+    <jelentkezesek>
+                
+        <jelentkezes allatRef="A1" id="J1" orokbefogadoRef="O1">
+                        
+            <datum>2026-04-01</datum>
+                        
+            <motivacio>Családi kutyát szeretnének örökbe fogadni.</motivacio>
+                        
+            <statusz>elfogadva</statusz>
+                        
+            <megjegyzes>Megfelelő körülmények.</megjegyzes>
+                    
+        </jelentkezes>
+                
+        <jelentkezes allatRef="A2" id="J2" orokbefogadoRef="O2">
+                        
+            <datum>2026-04-03</datum>
+                        
+            <motivacio>Lakásban tartható macskát keres.</motivacio>
+                        
+            <statusz>függőben</statusz>
+                        
+            <megjegyzes>Előzetes egyeztetés folyamatban.</megjegyzes>
+                    
+        </jelentkezes>
+                
+        <jelentkezes allatRef="A1" id="J3" orokbefogadoRef="O3">
+                        
+            <datum>2026-04-05</datum>
+                        
+            <motivacio>Korábban is tartott kutyát.</motivacio>
+                        
+            <statusz>elutasítva</statusz>
+                        
+            <megjegyzes>Az állat már más jelentkezőhöz került.</megjegyzes>
+                    
+        </jelentkezes>
+            
+    </jelentkezesek>
+    
+</allatmenhely>
