@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BQ5HU5_orarend>
+    <ora id="1" tipus="előadás">
+        <kurzus>Webkönyvtárak</kurzus>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>08:00</tol>
+            <ig>09:30</ig>
+        </idopont>
+        <helyszin>A/101</helyszin>
+        <oktato>Dr. Kovács Péter</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="2" tipus="gyakorlat">
+        <kurzus>Web-es adatkezelő környezetek</kurzus>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>10:00</tol>
+            <ig>11:30</ig>
+        </idopont>
+        <helyszin>Informatikai labor 2</helyszin>
+        <oktato>Bednárik László</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="3" tipus="előadás">
+        <kurzus>Adatbázisrendszerek</kurzus>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>12:00</tol>
+            <ig>13:30</ig>
+        </idopont>
+        <helyszin>B/205</helyszin>
+        <oktato>Dr. Nagy Anna</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="4" tipus="gyakorlat">
+        <kurzus>Java programozás</kurzus>
+        <idopont>
+            <nap>Csütörtök</nap>
+            <tol>14:00</tol>
+            <ig>15:30</ig>
+        </idopont>
+        <helyszin>Informatikai labor 1</helyszin>
+        <oktato>Kiss Gábor</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="5" tipus="szeminárium">
+        <kurzus>Projektmunka</kurzus>
+        <idopont>
+            <nap>Péntek</nap>
+            <tol>09:00</tol>
+            <ig>10:30</ig>
+        </idopont>
+        <helyszin>C/12</helyszin>
+        <oktato>Szabó Éva</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+</BQ5HU5_orarend>

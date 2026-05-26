@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BQ5HU5_orarend>
+    <ora id="01" tipus="elmélet">
+        <kurzus>Webkönyvtárak</kurzus>
+        <idopont><nap>Hétfő</nap><tol>08:00</tol><ig>09:30</ig></idopont>
+        <helyszin>A/101</helyszin>
+        <oktato>Dr. Kovács Péter</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="02" tipus="gyakorlat">
+        <kurzus>Web-es adatkezelő környezetek</kurzus>
+        <idopont><nap>Kedd</nap><tol>10:00</tol><ig>11:30</ig></idopont>
+        <helyszin>Labor 2</helyszin>
+        <oktato>Bednarik László</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="03" tipus="elmélet">
+        <kurzus>Adatbázis rendszerek</kurzus>
+        <idopont><nap>Szerda</nap><tol>12:00</tol><ig>13:30</ig></idopont>
+        <helyszin>B/205</helyszin>
+        <oktato>Nagy Anna</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="04" tipus="gyakorlat">
+        <kurzus>Java programozás</kurzus>
+        <idopont><nap>Csütörtök</nap><tol>14:00</tol><ig>15:30</ig></idopont>
+        <helyszin>Labor 1</helyszin>
+        <oktato>Szabó Gábor</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="05" tipus="konzultáció">
+        <kurzus>XML technológiák</kurzus>
+        <idopont><nap>Péntek</nap><tol>09:00</tol><ig>10:30</ig></idopont>
+        <helyszin>Online</helyszin>
+        <oktato>Bednarik László</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+</BQ5HU5_orarend>

@@ -1,0 +1,25 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.2 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.2">
+  <diagram name="UMLNeptunkod" id="0">
+    <mxGraphModel dx="1412" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="read" value="BQ5HU5DomRead&lt;br&gt;----------------------&lt;br&gt;+ main(args:String[]): void&lt;br&gt;&lt;br&gt;&lt;div&gt;- kiirCsomopont(csomopont:Node, behuzas:int): void&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="140" width="360" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="query" value="DomQueryBQ5HU5&lt;br&gt;----------------------&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ main(args:String[]): void&lt;br&gt;- osszesVendegKiirasa(dokumentum:Document): void&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- elfogadottFoglalasokKiirasa(dokumentum:Document): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- dragabbEtelekKiirasa(dokumentum:Document, alsoHatar:int): void&lt;/div&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" parent="1" vertex="1">
+          <mxGeometry x="560" y="140" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="doc" value="org.w3c.dom.Document / Node / Element / NodeList" style="rounded=1;dashed=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="390" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" source="read" target="doc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" source="query" target="doc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

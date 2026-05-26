@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="XMLSchemaBQ5HU5.xsd">
+    <etterem id="E1">
+        <nev>Duna Étterem</nev>
+        <cim>
+            <iranyitoszam>3950</iranyitoszam>
+            <varos>Sárospatak</varos>
+            <utca>Kossuth utca 12.</utca>
+        </cim>
+        <telefon>+36-47-123-456</telefon>
+    </etterem>
+
+    <vendegek>
+        <vendeg id="V1">
+            <nev>Kovács Anna</nev>
+            <email>anna.kovacs@example.com</email>
+            <telefon>+36-30-111-2222</telefon>
+        </vendeg>
+        <vendeg id="V2">
+            <nev>Nagy Péter</nev>
+            <email>peter.nagy@example.com</email>
+            <telefon>+36-20-333-4444</telefon>
+        </vendeg>
+    </vendegek>
+
+    <asztalok>
+        <asztal id="A1">
+            <ferohely>4</ferohely>
+            <elhelyezkedes>ablak mellett</elhelyezkedes>
+        </asztal>
+        <asztal id="A2">
+            <ferohely>2</ferohely>
+            <elhelyezkedes>terasz</elhelyezkedes>
+        </asztal>
+    </asztalok>
+
+    <foglalasok>
+        <foglalas id="F1" vendegRef="V1" asztalRef="A1">
+            <datum>2026-04-10</datum>
+            <idopont>18:00</idopont>
+            <letszam>4</letszam>
+            <statusz>elfogadva</statusz>
+        </foglalas>
+        <foglalas id="F2" vendegRef="V2" asztalRef="A2">
+            <datum>2026-04-11</datum>
+            <idopont>19:30</idopont>
+            <letszam>2</letszam>
+            <statusz>függőben</statusz>
+        </foglalas>
+    </foglalasok>
+
+    <etelek>
+        <etel id="ET1">
+            <nev>Gulyásleves</nev>
+            <kategoria>leves</kategoria>
+            <ar>1890</ar>
+        </etel>
+        <etel id="ET2">
+            <nev>Rántott sajt hasábburgonyával</nev>
+            <kategoria>főétel</kategoria>
+            <ar>3290</ar>
+        </etel>
+        <etel id="ET3">
+            <nev>Somlói galuska</nev>
+            <kategoria>desszert</kategoria>
+            <ar>1490</ar>
+        </etel>
+    </etelek>
+
+    <rendelesek>
+        <rendeles id="R1" foglalasRef="F1">
+            <tetel etelRef="ET1">
+                <mennyiseg>2</mennyiseg>
+            </tetel>
+            <tetel etelRef="ET2">
+                <mennyiseg>4</mennyiseg>
+            </tetel>
+        </rendeles>
+        <rendeles id="R2" foglalasRef="F2">
+            <tetel etelRef="ET3">
+                <mennyiseg>2</mennyiseg>
+            </tetel>
+        </rendeles>
+    </rendelesek>
+</vendeglatas>

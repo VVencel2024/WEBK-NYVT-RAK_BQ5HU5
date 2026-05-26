@@ -1,0 +1,71 @@
+{
+  "BQ5HU5_orarend": {
+    "ora": [
+      {
+        "@id": "01",
+        "@tipus": "elmélet",
+        "kurzus": "Webkönyvtárak",
+        "idopont": {
+          "nap": "Hétfő",
+          "tol": "08:00",
+          "ig": "09:30"
+        },
+        "helyszin": "A/101",
+        "oktato": "Dr. Kovács Péter",
+        "szak": "Programtervező informatikus"
+      },
+      {
+        "@id": "02",
+        "@tipus": "gyakorlat",
+        "kurzus": "Web-es adatkezelő környezetek",
+        "idopont": {
+          "nap": "Kedd",
+          "tol": "10:00",
+          "ig": "11:30"
+        },
+        "helyszin": "Labor 2",
+        "oktato": "Bednarik László",
+        "szak": "Programtervező informatikus"
+      },
+      {
+        "@id": "03",
+        "@tipus": "elmélet",
+        "kurzus": "Adatbázis rendszerek",
+        "idopont": {
+          "nap": "Szerda",
+          "tol": "12:00",
+          "ig": "13:30"
+        },
+        "helyszin": "B/205",
+        "oktato": "Nagy Anna",
+        "szak": "Programtervező informatikus"
+      },
+      {
+        "@id": "04",
+        "@tipus": "gyakorlat",
+        "kurzus": "Java programozás",
+        "idopont": {
+          "nap": "Csütörtök",
+          "tol": "14:00",
+          "ig": "15:30"
+        },
+        "helyszin": "Labor 1",
+        "oktato": "Szabó Gábor",
+        "szak": "Programtervező informatikus"
+      },
+      {
+        "@id": "05",
+        "@tipus": "konzultáció",
+        "kurzus": "XML technológiák",
+        "idopont": {
+          "nap": "Péntek",
+          "tol": "09:00",
+          "ig": "10:30"
+        },
+        "helyszin": "Online",
+        "oktato": "Bednarik László",
+        "szak": "Programtervező informatikus"
+      }
+    ]
+  }
+}

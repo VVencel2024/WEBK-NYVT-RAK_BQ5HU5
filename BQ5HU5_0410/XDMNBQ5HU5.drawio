@@ -1,0 +1,23 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="XDMNeptunkod">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="v" value="vendeglatas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="480" y="40" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="e" value="etterem&#xa;@id&#xa;nev,cim,telefon" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="60" y="170" width="180" height="100" as="geometry"/></mxCell>
+        <mxCell id="ve" value="vendeg&#xa;@id&#xa;nev,email,telefon" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="270" y="170" width="180" height="100" as="geometry"/></mxCell>
+        <mxCell id="a" value="asztal&#xa;@id&#xa;ferohely,elhelyezkedes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="480" y="170" width="180" height="100" as="geometry"/></mxCell>
+        <mxCell id="f" value="foglalas&#xa;@id @vendegRef @asztalRef&#xa;datum,idopont,letszam,statusz" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="690" y="170" width="220" height="110" as="geometry"/></mxCell>
+        <mxCell id="et" value="etel&#xa;@id&#xa;nev,kategoria,ar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="330" y="340" width="180" height="100" as="geometry"/></mxCell>
+        <mxCell id="r" value="rendeles&#xa;@id @foglalasRef&#xa;tetel/@etelRef, mennyiseg" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="570" y="340" width="220" height="100" as="geometry"/></mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="v" target="e"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="v" target="ve"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="v" target="a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="v" target="f"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="v" target="et"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge6" edge="1" parent="1" source="v" target="r"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head><meta charset="UTF-8"><title>Órarend JSON feldolgozás</title>
+<style>
+body{font-family:Arial;background:#f4f4f4;padding:30px}
+.kartya{background:white;margin:15px 0;
+padding:15px;border-radius:8px;box-shadow:0 2px 8px #ccc}
+h1{color:#222}
+</style></head>
+<body>
+<h1>BQ5HU5 Órarend</h1>
+<div id="kimenet"></div>
+<script>
+fetch('orarendBQ5HU5.json')
+  .then(valasz => valasz.json())
+  .then(adat => {
+    const orak = adat.BQ5HU5_orarend.ora;
+    const kimenet = document.getElementById('kimenet');
+    orak.forEach(ora => {
+      kimenet.innerHTML += `
+        <div class="kartya">
+          <p><b>id:</b> ${ora['@id']}</p>
+          <p><b>típus:</b> ${ora['@tipus']}</p>
+          <p><b>kurzus:</b> ${ora.kurzus}</p>
+          <p><b>nap:</b> ${ora.idopont.nap}</p>
+          <p><b>tól:</b> ${ora.idopont.tol}</p>
+          <p><b>ig:</b> ${ora.idopont.ig}</p>
+          <p><b>helyszín:</b> ${ora.helyszin}</p>
+          <p><b>oktató:</b> ${ora.oktato}</p>
+          <p><b>szak:</b> ${ora.szak}</p>
+        </div>`;
+    });
+  })
+  .catch(hiba => document.getElementById('kimenet').innerHTML = 'Hiba: ' + hiba);
+</script>
+</body></html>
